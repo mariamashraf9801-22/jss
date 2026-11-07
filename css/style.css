@@ -1,0 +1,9 @@
+.big-img img{
+  height: 300px;
+}
+img{
+  height: 115px;
+}
+.active{
+  border: red solid 3px;
+}

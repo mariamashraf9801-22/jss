@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<form class="w-50 mx-auto my-5">
+<input type="text" class="form-control my-3" id="productName" placeholder="product name" oninput=" Validation(this)">
+
+<p class="alert alert-danger my-3 d-none">must start with capital letter</p>
+
+<input type="text" class="form-control my-3" id="productPrice" placeholder="product price" oninput=" Validation(this)">
+<p class="alert alert-danger my-3 d-none">must numbers</p>
+<textarea name="" id="productDes" class="form-control my-3" placeholder="productDes" oninput=" Validation(this)"></textarea>
+<p class="alert alert-danger my-3 d-none">must descraption</p>
+<select class="form-control my-3" id="productCat" oninput=" Validation(this)">
+<option >pc</option>
+<option >mobile</option>
+<option >toy</option>
+</select>
+<p class="alert alert-danger my-3 d-none">must cat</p>
+
+<input type="file" accept="image/*" class="form-control my-3" id="productImg" placeholder="product image">
+
+<p class="alert alert-danger my-3 d-none">must img</p>
+
+<button type="button"  onclick="creatProduct()"  id="addBtn"   class="btn btn-info">add product</button>
+<button type="button" id="updateBtn"   class="btn btn-danger d-none" onclick="updateFun()">update product</button>
+</form>
+
+
+
+
+
+
+
+
+
+<div class="container">
+<input type="text" id="searchinput" placeholder="search by name ...." class="mx-auto form-control w-50 my-5"
+oninput="searchFun()">
+
+<div class="row" id="productRow">
+
+</div>
+</div>
+
+
+
+
+
+
+
+<h1 id="demo">helloooo</h1> 
+
+
+
+<p>Lorem, ipsum dolor.</p>
+<p>Lorem, ipsum dolor.</p>
+<p>Lorem, ipsum dolor.</p>
+
+
+<button id="btn" class="btn btn-info">okk</button>
+
+
+<div class="w-50 mx-50 mx-auto my-5"> 
+  <div class="big-img">
+    <img src="img/photo_2026-09-09_03-20-21.jpg" alt="">
+  </div>
+  <div class="group">
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, perspiciatis.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+  <div class="d-flex">
+    <img src="img/photo_2026-09-09_17-14-11.jpg" alt="">
+    <img src="img/photo_2026-09-09_17-24-48.jpg" alt="">
+    <img src="img/photo_2026-09-09_17-25-26.jpg" alt="">
+    <img src="img/photo_2026-09-09_17-41-44.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="parent border border-4 p-4 my-3 border-danger w-50 mx-auto">
+  <div class="child border border-3  border-info p-4">
+    <button class="btn btn-danger border-2">ok</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
